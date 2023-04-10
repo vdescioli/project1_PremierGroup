@@ -1,0 +1,71 @@
+Premier Soccer Player and Team analysis
+
+For this analysis we used https://www.kaggle.com/datasets/themlphdstudent/premier-league-player-stats-data
+We imported a csv file from this website, turned it into a dataframe and then began manipulating the data 
+to find trends in player attributes.  
+
+Part of our analysis uses the top 50 rank players in our dataset as a subset, so we used the t-test method 
+to determine if our subset is an accurate representation of the entire league.  With very low p-values almost
+near zero we concluded that it was an acccurate sample.
+
+We calculated goal percentage as total number of goals divided by total shots and shot accuracy as total
+number of shots on goal divided by total number of shots.  
+
+Plot analysis
+
+Minutes played vs goal scored:
+
+•	In this graph we can see that r2 represents roughly 20 % of the variation within the data explained
+    by minutes played vs goal scored 
+
+•	We can also appreciate a simple linear regression computed using goal as the (y) axis and minutes 
+    played as the (x) axis meaning that if we increase the units of minutes played goals scored will
+    increase by 0.0039.
+
+Top players vs goal scored:
+
+•	In this graph we can see that r2 represents roughly 80 % of the variation within the data explained
+    by minutes played vs goal scored 
+
+•	We can also appreciate a simple linear regression computed using top players rank as the (y) axis 
+    and goals as the (x) axis meaning that if we increase the units of top players goals scored will 
+    increase due that the rank of the player will be closer to the top-ranking players.
+
+Players ranked vs assists:
+
+•	In this graph we can see that r2 represents roughly 4% of the variation within the data explained by 
+    player rank vs asssists.  
+
+•	We can also appreciate a simple linear regression computed using top players rank as the (y) axis 
+    and assists as the (x) axis meaning and the moderate correlation that exists. 
+
+Team x Goal%:
+    In this graph, we find the average accuracy of shots on goal for each individual team.  The data signifies 
+that teams usually shoot several times before actually getting on the net such that an opposing goalkeeper 
+needs to make a save.  The average between the teams is varied and in this analysis the teams with the worst 
+placement little precision, and on the other hand, we have teams that stand out in precision but do not have numbers that 
+are so different or above average.
+
+Team x Shots on Goal:
+In this graph, we try to show what is the behavior according to our database of English teams versus their 
+numbers in relation to shots towards the goal, what is its meaning and how can we, through this graphical
+analysis, realize that on average 30 % of kicks performed during a match of approximately 90 minutes are 
+towards the goal, while the remaining, approximately 70% are wasted kicks, that is, kicks that do not pose 
+any danger to the opposing goalkeeper.  We were also able to notice that the margin between the team with the worst aim is not so different compared to the team with the best aim, which, according to our database, does not reach 50% of shots on goal.
+
+Team x Total Goal:
+In this graph, we can see that there is a very large disparity in relation to the goals scored per season
+by each team in this championship, on the one hand, we have teams that scored less than 30 goals in 38 
+matches, that is, less than one goal per match while times teams that managed to score more than 80 goals,
+that is, an average of more than 2 goals per game, showing that the financial capacity and signing of players
+ known as ''gunners'' make teams score more goals in the regular season.
+
+Limitations of dataset:
+Our data set ranked all the players in the league based on number of goals and then assists if number of 
+goals was equal.  A rating system that considers various player attributes would lead to more accurate 
+trends between players, and better consulting possibilities for coaching purposes.  
+
+Future Potential:  
+Combining player stats with team financial data would reveal spending trends and that could help teams perform 
+better from a finanial perspective as well. Perhaps it could also indicate a baseline budget teams should 
+expect to spend in order to aquire a top ranked team.   
